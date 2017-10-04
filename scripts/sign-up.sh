@@ -10,7 +10,12 @@ curl "${API}${URL_PATH}" \
     "credentials": {
       "email": "'"${EMAIL}"'",
       "password": "'"${PASSWORD}"'",
-      "password_confirmation": "'"${PASSWORD}"'"
+      "password_confirmation": "'"${PASSWORD}"'",
+      "first_name": "'"${FIRSTNAME}"'",
+      "last_name": "'"${LASTNAME}"'",
+      "city": "'"${CITY}"'",
+      "zip": "'"${ZIP}"'",
+      "phone": "'"${PHONE}"'"
     }
   }'
 

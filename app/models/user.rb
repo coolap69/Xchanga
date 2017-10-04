@@ -2,6 +2,6 @@
 
 class User < ApplicationRecord
   include Authentication
-  has_many :messages, through: :ads
-  has_many :ads
+  has_many :messages, through: :ads, dependent: :destroy
+  has_many :ads, dependent: :destroy
 end
