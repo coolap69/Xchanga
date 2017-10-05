@@ -17,7 +17,6 @@ class MessagesController < ApplicationController
   def create
     #@message = current_user.messages.build(message_params)
     @message = Message.new(message_params)
-binding.pry
     if @message.save
       render json: @message, status: :created, location: @message
     else
